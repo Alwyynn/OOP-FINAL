@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difficulty</title>
+    <link rel="stylesheet" href="difficulty.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" id="backbutton">Back</a>
+        <h1 id="Difficulty">Select Difficulty</h1>
+        <div class="btn-container">
+            <a href="#" id="easy" class="btn" data-href="easy.html" data-instructions="Instructions: You have 15 seconds and 5 lives. If the timer runs out, you'll lose 1 life. If you lose all your lives, you lose.">Easy</a>
+            <a href="#" id="medium" class="btn" data-href="medium.html" data-instructions="Instructions: You have 10 seconds and 5 lives. If the timer runs out, you'll lose 1 life. If you lose all your lives, you lose.">Medium</a>
+            <a href="#" id="hard" class="btn" data-href="hard.html" data-instructions="Instructions: You have 10 seconds and 3 lives. If the timer runs out, you'll lose 1 life. If you lose all your lives, you lose.">Hard</a>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p id="popup-instructions"></p>
+            <button id="close-popup">OK</button>
+        </div>
+    </div>
+
+    <script src="difficulty.js"></script>
+</body>
+</html>

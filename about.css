@@ -1,0 +1,122 @@
+:root {
+    background-color: #333f;
+    font-size: 16px;
+}
+
+html,
+  body {
+    margin: 0;
+    background-image: url('1.jpg');
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-attachment: fixed; /* Fixed background */
+  }
+
+body, h1, h2, p, li {
+    text-transform: uppercase;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 16px;
+    text-align: center;
+    transition: color 150ms; /* Add transition for color change */
+}
+
+h1
+{
+    font-size: 36px;
+    color: white;
+}
+
+h1:hover {
+    color: gray; /* Change color on hover */
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h2:hover {
+    color: gray; /* Change color on hover */
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h3:hover {
+    color: gray; /* Change color on hover */
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+p,
+li {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+p:hover,
+li:hover {
+    color: gray; /* Change color on hover */
+}
+
+ul {
+    list-style-type: none;
+}
+
+.credits {
+    font-size: 18px;
+}
+
+.credits li {
+    margin-bottom: 10px;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    font-size: 25px; /* Adjust as needed */
+    padding: 16px; /* Adjust as needed */
+    border: 1.6px solid white;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    transition: transform 150ms, box-shadow 150ms;
+}
+
+.back-button:hover {
+    cursor: pointer;
+    box-shadow: 0 6.4px 25px 0 black;
+    transform: translateY(-1.6px);
+}
+
+.back-button:disabled:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}

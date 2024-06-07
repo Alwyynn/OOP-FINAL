@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Easy Level Score</title>
+  <link rel="stylesheet" href="easyend.css">
+</head>
+<body>
+  <div class="container">
+    <div id="EndEasy" class="flex-center flex-column"> <!-- Updated ID -->
+      <h1 id="FinalScoreEasy"></h1> <!-- Updated ID -->
+      <form>
+        <input
+          type="text"
+          name="usernameEasy"
+          id="usernameEasy"
+          placeholder="username"
+        />
+        <button
+          type="submit"
+          class="btn"
+          id="SaveScoreBtnEasy"
+          onclick="saveHighScoreEasy(event)"
+        >
+          Save
+        </button>
+      </form>
+      <a class="btn" href="difficulty.html">Play Again</a>
+      <a class="btn" href="index.html">Go Home</a>
+      <a class="btn" href="easyhighscores.html">Scores List</a> <!-- Updated link -->
+    </div>
+  </div>
+  <script src="easyend.js"></script>
+</body>
+</html>

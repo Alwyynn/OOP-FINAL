@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Medium Level Score</title> <!-- Updated title -->
+  <link rel="stylesheet" href="mediumend.css"> <!-- Updated CSS file -->
+</head>
+<body>
+  <div class="container">
+    <div id="EndMedium" class="flex-center flex-column"> <!-- Updated ID -->
+      <h1 id="FinalScoreMedium"></h1> <!-- Updated ID -->
+      <form>
+        <input
+          type="text"
+          name="usernameMedium"
+          id="usernameMedium"
+          placeholder="username"
+        />
+        <button
+          type="submit"
+          class="btn"
+          id="SaveScoreBtnMedium"
+          onclick="saveHighScoreMedium(event)"
+        >
+          Save
+        </button>
+      </form>
+      <a class="btn" href="difficulty.html">Play Again</a>
+      <a class="btn" href="index.html">Go Home</a>
+      <a class="btn" href="mediumhighscores.html">Scores List</a> <!-- Updated link -->
+    </div>
+  </div>
+  <script src="mediumend.js"></script> <!-- Updated JavaScript file -->
+</body>
+</html>

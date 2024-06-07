@@ -1,0 +1,106 @@
+:root {
+    background-color: #333; /* Dark background */
+    font-size: 62.5%;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #eee; /* Light text */
+  }
+  
+  /* UTILITIES */
+
+  html,
+  body {
+    margin: 0;
+    background-image: url('2.jpg');
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-attachment: fixed; /* Fixed background */
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .container > * {
+    width: 100%;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* BUTTONS */
+  .btn {
+    font-size: 25px;
+    padding: 16px 0;
+    width: 320px;
+    text-align: center;
+    border: 1.6px solid white; /* Light blue border */
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: white; /* Light blue text */
+    background-color: black;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 6.4px 25px 0 black; /* Light blue shadow */
+    transform: translateY(-1.6px);
+    transition: transform 150ms;
+  }
+  
+  .btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+  
+  #quickquiz {
+    font-size: 60px;
+    color: white; /* Light blue */
+    margin-bottom: 60px;
+    position: relative;
+    animation: textHighlight 3s infinite alternate; /* Animation applied */
+  }
+  
+  @keyframes textHighlight {
+    100% {
+      color: white; /* Light blue */
+      text-shadow: 0 0 10px gray; /* Light blue shadow */
+    }
+    100% {
+      color: white; /* Light blue */
+      text-shadow: 0 0 20px gray; /* Light blue shadow */
+    }
+  }
